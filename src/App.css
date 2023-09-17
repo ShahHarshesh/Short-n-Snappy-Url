@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  background: linear-gradient(135deg, rgba(50,50,60,1) 0%, rgba(28, 40, 51, 1) 50%, rgba(40, 30, 60, 1) 100%);
+  color: #d1d1d1;
+  font-family: Arial, sans-serif;
+}
+
+.shortener {
+  width: fit-content;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(35, 35, 45, 0.9); /* Slightly transparent to show the gradient background */
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.shortener input, .shortener button {
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+
+.shortener input {
+  border: 1px solid rgba(211, 211, 211, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #d1d1d1;
+}
+
+.shortener input:focus {
+  border-color: rgba(126, 165, 212, 0.7);
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.shortener button {
+  background-color: rgba(95, 180, 245, 0.8);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.shortener button:hover {
+  background-color: rgba(51, 162, 246, 0.9);
+}
+
+.shortener__viewShot {
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.shortener__viewShot button {
+  background-color: transparent;
+  border: none;
+  color: rgba(211, 211, 211, 0.5);
+  cursor: pointer;
+}
+
+.shortener__viewShot button:hover {
+  color: #d1d1d1;
+}
